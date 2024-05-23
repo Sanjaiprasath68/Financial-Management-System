@@ -29,7 +29,7 @@ const EditPerson = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`https://finance-api-ochre.vercel.app/editPerson/${id}`);
+      const response = await axios.get(`https://marians-subscription-api.vercel.app/editPerson/${id}`);
       setPerson(response.data);
       console.log(response.data)
     } catch (error) {
@@ -48,7 +48,7 @@ const EditPerson = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`https://finance-api-ochre.vercel.app/editPerson/${id}`, person);
+      await axios.put(`https://marians-subscription-api.vercel.app/editPerson/${id}`, person);
       navigate('/admin')
     } catch (error) {
       console.error('Error updating data: ', error);

@@ -16,7 +16,7 @@ const Login = ({signin}) => {
         setErrorMsg('');
 
         try{
-            const response = await axios.post('https://finance-api-ochre.vercel.app/login',{username, password});
+            const response = await axios.post('https://marians-subscription-api.vercel.app/login',{username, password});
             console.log(response.data);
             if(response.data.success===true){
                 navigate('/admin')

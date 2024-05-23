@@ -23,7 +23,7 @@ const AddPerson = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://demo-marians-api.vercel.app/addPerson', { name, year, jan, feb, mar, apl, may, june, july, aug, sep, oct, nov, dcm });
+      const response = await axios.post('https://marians-subscription-api.vercel.app/addPerson', { name, year, jan, feb, mar, apl, may, june, july, aug, sep, oct, nov, dcm });
       console.log(response.data)
       setName('');
       setYear('')

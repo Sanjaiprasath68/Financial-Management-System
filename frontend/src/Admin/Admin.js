@@ -6,14 +6,14 @@ import './Admin.css';
 const Admin = () => {
   const [datas, setDatas] = useState([]);
   useEffect(() => {
-    axios.get('https://demo-marians-api.vercel.app/details')
+    axios.get('https://marians-subscription-api.vercel.app/details')
       .then(res => setDatas(res.data))
       .catch(err => console.log(err))
   }, []);
 
   const handleDelete = async (id) => {
     try {
-      const response = await axios.delete(`https://demo-marians-api.vercel.app/deletePerson/${id}`)
+      const response = await axios.delete(`https://marians-subscription-api.vercel.app/deletePerson/${id}`)
       console.log(response.data)
     } catch (error) {
       console.log("Error Deleteing person");

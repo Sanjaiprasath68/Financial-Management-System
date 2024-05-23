@@ -22,7 +22,7 @@ const Display = () => {
 
   const fetchPersonsByYear = async (year) => {
     try {
-      const response = await axios.get(`https://demo-marians-api.vercel.app/details/${year}`);
+      const response = await axios.get(`https://marians-subscription-api.vercel.app/details/${year}`);
       setDatas(response.data);
       setYearSelected(true);
     } catch (error) {
