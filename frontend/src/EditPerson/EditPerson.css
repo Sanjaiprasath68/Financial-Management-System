@@ -1,0 +1,153 @@
+/* .editperson-admin-link,
+.editperson-home-link {
+    float: right;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    background-color: lightslategray;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.editperson-admin-link {
+    margin-right: 30px;
+}
+
+.editperson-home-link {
+    margin-right: 30px;
+}
+
+.editperson-name {
+    margin-top: 20px;
+}
+
+.editperson-name input {
+    padding: 8px;
+    border-radius: 5px;
+    width: 400px;
+    margin-right: 50px;
+    border: 1px solid silver;
+}
+
+.container .edit-datas {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 30px;
+}
+
+.edit-data {
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+form .edit-datas input {
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 280px;
+    margin-left: 10px;
+}
+
+.editperson-btn {
+    float: right;
+    background-color: lightslategray;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid silver;
+    font-size: 16px;
+    width: 150px;
+    margin-right: 35px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -50px;
+}
+
+form .edit-datas label {
+    margin-left: 10px;
+}
+
+.success-msg {
+    color: green;
+    margin-left: 80px;
+} */
+
+@media screen and (max-width:480px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .h1-editperson {
+        text-align: center;
+        margin-top: 20px;
+        color: tomato;
+        display: inline;
+    }
+
+    .editperson-admin-link {
+        float: right;
+    }
+
+    .editperson-home-link {
+        float: right;
+        margin-right: -50px;
+        margin-top: 40px;
+    }
+
+    .edit-data label {
+        display: flex;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .edit-datas input {
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding: 10px;
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .editperson-btn {
+        padding: 10px;
+        margin-left: 150px;
+        margin-top: 10px;
+        width: 100px;
+        border-radius: 8px;
+        border: 1px solid silver;
+    }
+    
+    .dropdown {
+        float: right;
+        margin-right: 13px;
+        margin-top: -30px;
+    }
+    .dropdown-button {
+        width: 60px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+
+    .active-dropdown {
+        width: 60px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+    .dropdown-content p .editperson-admin-link,.editperson-home-link{
+        text-decoration: none;
+        font-size: 10px;
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 0px;
+    }
+   
+}

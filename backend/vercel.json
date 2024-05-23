@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "Server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "handle": "filesystem"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/Server.js"
+      }
+    ],
+    "env": {
+      "FinanceDb_URL": "mongodb+srv://Sanjai:Sanjai_9843@cluster0.2ix6qqs.mongodb.net/FinanceDB?retryWrites=true&w=majority&appName=Cluster0"
+    }
+  }

@@ -1,0 +1,84 @@
+p{
+    display: inline;
+}
+.addperson-link{
+    margin-right: 20px;
+}
+.home-link{
+    margin-right: 25px;
+}
+.home-link , .addperson-link{
+    float: right;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    background-color: lightslategray;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+.home-link:hover, .addperson-link:hover{
+    background-color: rgb(187, 184, 184);
+}
+.admin{
+    margin-left: 40px;
+    margin-top: 70px;
+}
+.table-admin{
+    text-align: center;
+    width: 96%;
+    padding: 10px;
+    border-collapse: collapse;
+}
+.table-admin th{
+    padding: 10px;
+    background-color: lightslategray;
+    color: white;
+}
+.table-admin tbody tr:nth-child(even){
+    background-color: rgb(229, 231, 233);
+}
+.table-admin tbody td{
+    padding: 8px;
+}
+.edit{
+    text-decoration: none;
+    color: blueviolet;
+}
+.delete{
+    text-decoration: none;
+    color: red;
+}
+.empty-data{
+    color: red;
+    margin-left: 550px;
+}
+
+@media screen and (max-width:480px) {
+    .dropdown {
+        float: right;
+        margin-right: 13px;
+        margin-top: -30px;
+    }
+    .dropdown-button {
+        width: 60px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+
+    .active-dropdown {
+        width: 60px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+    .dropdown-content p .addPerson-link,.home-link{
+        text-decoration: none;
+        background-color: gray;
+        font-size: 10px;
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+}
